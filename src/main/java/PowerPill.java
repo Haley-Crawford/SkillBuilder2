@@ -4,35 +4,90 @@
  * a game.  The purpose of a power pill is to simply
  * provide a character with power.
  *
- * @author (You)
+ * @author (Haley Crawford)
  * @version (0.1)
  */
 public class PowerPill
 {
-    // TODO - replace this line with instruction from step 1
+    private static final int DEFAULT_POWER = 10;
 
     // instance variables
-    // TODO - replace this line with instruction from step 2
-    // TODO - replace this line with instruction from step 3
+    private int power;
+    private String name;
+
 
     // constructors
 
-    // TODO - replace this line with instruction from step 4
+    /**
+     * Initializes this power pill to a default power value
+     * and sets the name of the pill to name.
+     * @param name the name of this power pill.
+     */
+    public PowerPill(String name)
+    {
+        this.name = name;
+        power = DEFAULT_POWER;
+    }
 
-    // TODO - replace this line with instruction from step 5
+    /**
+     * Initializes this power pill to the value of power
+     * and sets the name of the pill to name.
+     * @param name the name of this power pill
+     * @param power the power level of this power pill.
+     */
+    public PowerPill(String name, int power)
+    {
+        this.name = name;
+        this.power = power;
+    }
 
 
     // accessor methods
 
-    // TODO - replace this line with instruction from step 6
+    /**
+     * Gets the name of this power pill
+     */
+    public String getName()
+    {
+        return name;
+    }
+
+    /**
+     * Gets the power level of this power pill
+     */
+    public int getPower()
+    {
+        return power;
+    }
 
 
     // mutator methods
 
-    // TODO - replace this line with instruction from step 7
+    /**
+     * Sets the name of this power pill
+     * @param name the new name of this power pill
+     */
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    /**
+     * Sets the power level of this power pill
+     * @param power the new power level of this power pill
+     */
+    public void setPower(int power)
+    {
+        this.power = power;
+    }
 
     // toString method
 
-    // TODO - replace this line with instruction from step 8
-
+    /**
+     * Returns the name of this power pill with its associated power level
+     */
+    public String toString()
+    {
+        return "PowerPill " + name + " = " + power;
+    }
 }
